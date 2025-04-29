@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web-server:
+    build: .
+    ports:
+      - "${PORT}:${PORT}"
+    environment:
+      - DATA_DIR=${DATA_DIR}
+      - PORT=${PORT}
+    volumes:
+      - ${DATA_DIR}:/usr/src/webserver/data

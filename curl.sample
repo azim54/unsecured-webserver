@@ -1,0 +1,2 @@
+// This is a sample curl command to send a POST request to a local server
+ curl http://localhost -d '{"message":"hello"}'
